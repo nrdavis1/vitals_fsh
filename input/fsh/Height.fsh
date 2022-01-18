@@ -1,0 +1,46 @@
+Profile: Height
+Parent: CoreHeight
+Id: height
+Description: "Height, the measured height of an individual's body."
+* ^version = "0.2.0"
+* ^status = #draft
+* ^date = "2019-05-29"
+* ^publisher = "HSPC"
+* ^jurisdiction = urn:iso:std:iso:3166#US
+* ^kind = #complex-type
+* . ^short = "Body Height"
+* . ^definition = "Height, the measured height of an individual's body."
+* extension contains
+    ExtBodyPosition named bodyPosition 0..* MS and
+    ExtDeviceCode named measurementDevice 0..* MS and
+    MeasurementSettingExt named MeasurementSetting 0..* MS
+* extension[bodyPosition].value[x] only CodeableConcept
+* extension[bodyPosition].valueCodeableConcept from HeightBodyPositionvalueset (extensible)
+* extension[bodyPosition] ^short = "Body Position"
+* extension[measurementDevice].value[x] only CodeableConcept
+* extension[measurementDevice].valueCodeableConcept from HeightLengthMeasurementDevicevalueset (extensible)
+* extension[measurementDevice] ^short = "Measurement Device Type"
+* extension[MeasurementSetting].value[x] only CodeableConcept
+* extension[MeasurementSetting].valueCodeableConcept from MeasurementSettingVS (extensible)
+* extension[MeasurementSetting] ^short = "Measurement setting"
+* status MS
+* code 1..1 MS
+* code = LNC#8302-2
+* code ^short = "Body height"
+* subject 1..1 MS
+* subject only Reference(USCorePatient)
+* effective[x] 1..1 MS
+* valueQuantity only Quantity
+* valueQuantity MS
+* valueQuantity.value 1..1 MS
+* valueQuantity.unit 1..1 MS
+* valueQuantity.system 1..1 MS
+* valueQuantity.system only uri
+* valueQuantity.system = "http://unitsofmeasure.org" (exactly)
+* valueQuantity.code 1..1 MS
+* valueQuantity.code only code
+* valueQuantity.code from LengthUOMVS (required)
+* dataAbsentReason MS
+* interpretation from NumericResultInterpretationNom (extensible)
+* method MS
+* method from HeightLengthMeasurementMethodvalueset (extensible)
