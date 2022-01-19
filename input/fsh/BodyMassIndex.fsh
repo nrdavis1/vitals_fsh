@@ -2,18 +2,8 @@ Profile: BodyMassIndex
 Parent: BMI 
 Id: body-mass-index
 Description: "Body Mass Index, the measurement of body fat based on an individual's height and weight and given as a ration of kilograms per square meter."
-* ^version = "0.2.0"
-* ^status = #draft
-* ^date = "2019-05-29"
-* ^publisher = "HSPC"
-* ^jurisdiction = urn:iso:std:iso:3166#US
-* ^kind = #complex-type
-* . ^short = "Body Mass Index"
-* . ^definition = "Body Mass Index, the measurement of body fat based on an individual's height and weight and given as a ration of kilograms per square meter."
 * extension contains 
     MeasurementSettingExt named MeasurementSetting 0..* MS
-* extension[MeasurementSetting].value[x] only CodeableConcept
-* extension[MeasurementSetting].valueCodeableConcept from MeasurementSettingVS (extensible)
 * extension[MeasurementSetting] ^short = "Measurement setting"
 * status MS
 * code = LNC#39156-5

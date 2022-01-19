@@ -2,22 +2,12 @@ Profile: BodyLength
 Parent: VitalSigns
 Id: body-length
 Description: "Body Length, the measured length of an individual's body.  This measurement is usually taken while lying down."
-* ^version = "0.2.0"
-* ^status = #draft
-* ^date = "2019-05-29"
-* ^publisher = "HSPC"
-* ^jurisdiction = urn:iso:std:iso:3166#US
-* ^kind = #complex-type
-* . ^short = "Body Length"
-* . ^definition = "Body Length, the measured length of an individual's body.  This measurement is usually taken while lying down."
 * extension contains
     ExtDeviceCode named measurementDevice 0..* MS and
     MeasurementSettingExt named MeasurementSetting 0..* MS
 * extension[measurementDevice].value[x] only CodeableConcept
 * extension[measurementDevice].valueCodeableConcept from HeightLengthMeasurementDevicevalueset (extensible)
 * extension[measurementDevice] ^short = "Measurement Device Type"
-* extension[MeasurementSetting].value[x] only CodeableConcept
-* extension[MeasurementSetting].valueCodeableConcept from MeasurementSettingVS (extensible)
 * extension[MeasurementSetting] ^short = "Measurement setting"
 * status MS
 * code = LNC#8306-3

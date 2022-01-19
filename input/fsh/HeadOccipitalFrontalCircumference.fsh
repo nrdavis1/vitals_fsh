@@ -3,14 +3,6 @@ Parent: HeadCirc
 Id: head-occipital-frontal-circumference
 Title: "Head Occipital-Frontal Circumference"
 Description: "Head Occipital/Frontal Circumference by Tape Measure, the measured length around and individual's head via a tape measure."
-* ^version = "0.2.0"
-* ^status = #draft
-* ^date = "2019-05-29"
-* ^publisher = "HSPC"
-* ^jurisdiction = urn:iso:std:iso:3166#US
-* ^kind = #complex-type
-* . ^short = "Head, Occipital-Frontal Circumference"
-* . ^definition = "Head Occipital/Frontal Circumference by Tape Measure, the measured length around and individual's head via a tape measure."
 * status MS
 * code 1..1 MS
 * code = LNC#8287-5

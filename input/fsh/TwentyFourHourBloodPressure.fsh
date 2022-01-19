@@ -3,26 +3,12 @@ Parent: VitalSigns
 Id: twenty-four-hour-blood-pressure
 Title: "Twenty Four Hour Blood Pressure"
 Description: "An average blood pressure (systolic and diastolic) over a twenty four hour period."
-* ^version = "0.2.0"
-* ^status = #draft
-* ^date = "2020-05-13"
-* ^publisher = "Logica Health"
-* ^jurisdiction = urn:iso:std:iso:3166#US
-* ^kind = #complex-type
-* . ^short = "24 hour blood pressure"
-* . ^definition = "An average blood pressure (systolic and diastolic) over a twenty four hour period."
 * extension contains
     ExtBodyPosition named BodyPosition 0..* MS and
     ExerciseAssociationExt named exerciseAssociation 0..* MS and
     MeasurementSettingExt named MeasurementSetting 0..* MS
-* extension[BodyPosition].value[x] only CodeableConcept
-* extension[BodyPosition].valueCodeableConcept from BodyPositionvalueset (extensible)
 * extension[BodyPosition] ^short = "Body Position"
-* extension[exerciseAssociation].value[x] only CodeableConcept
-* extension[exerciseAssociation].valueCodeableConcept from ExertionPhaseVS (extensible)
 * extension[exerciseAssociation] ^short = "Exercise Association"
-* extension[MeasurementSetting].value[x] only CodeableConcept
-* extension[MeasurementSetting].valueCodeableConcept from MeasurementSettingVS (extensible)
 * extension[MeasurementSetting] ^short = "Measurement setting"
 * status MS
 * code = SCT#314463006

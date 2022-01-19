@@ -2,14 +2,6 @@ CodeSystem: APCTemporaryCodeSystem
 Id: APCTemporaryCodeSystem
 Title: "Associated Precondition Temporary Code System"
 Description: "This is a temporary code system for terms that are not yet defined in either SNOMED CT nor Solor.  This will be deprecated when the terms are defined in either of those systems."
-* ^version = "0.2.0"
-* ^status = #draft
-* ^experimental = true
-* ^date = "2019-10-07"
-* ^publisher = "Logica"
-* ^jurisdiction = urn:iso:std:iso:3166#US
-* ^caseSensitive = true
-* ^content = #complete
 * #AFAN "After anesthesia" "An indication that a procedure, event, or other took place after the administration of anesthesia."
 * #BFAN "Before anesthesia" "An indication that a procedure, event, or other took place before the administration of anesthesia."
 * #DUAN "During anesthesia" "An indication that a procedure, event, or other took place during the administration of anesthesia."
@@ -26,17 +18,6 @@ CodeSystem: OrganizationHSPCOrganizationType
 Id: organization-hspc-organizationtype
 Title: "HSPC Organization Type Code System"
 Description: "The set of codes that describe a kind of organization."
-* ^url = "http://hl7.org/fhir/us/vitals/organization-hspc-organizationtype"
-* ^version = "0.2.0"
-* ^status = #draft
-* ^experimental = true
-* ^date = "2015-05-19"
-* ^publisher = "HL7 US Realm Steering Committee"
-* ^contact.telecom.system = #other
-* ^contact.telecom.value = "http://healthcaresoa.org"
-* ^jurisdiction = urn:iso:std:iso:3166#US
-* ^caseSensitive = true
-* ^content = #complete
 * #526758010 "Clinic" "A place where outpatients are provided medical treatments or advices."
 * #526758011 "Cancer Center" "A center where patients with cancer are cared and treated."
 * #526758012 "Dental Office" "A place where dental services are provided."
@@ -57,14 +38,6 @@ CodeSystem: SolorTemporaryCodeSystem
 Id: SolorTemporaryCodeSystem
 Title: "SNOMED CT Solor Extension Temporary Code System"
 Description: "A set of codes that are defined in the Solor extension to the SNOMED CT code system. To be used until they are adopted by SNOMED CT."
-* ^version = "0.2.0"
-* ^status = #draft
-* ^experimental = true
-* ^date = "2019-10-07"
-* ^publisher = "Logica"
-* ^jurisdiction = urn:iso:std:iso:3166#US
-* ^caseSensitive = true
-* ^content = #complete
 * #1461000205102 "Digital thermometer (physical object)" "A device used to measure temperature with digital readout."
 * #2331000205106 "Non-contact infrared thermometer (physical object)" "A device used to measure temperature via infrared technology that does not come into contact with the skin."
 * #24031000205108 "Thermoluminescent diode thermometer (physical object)" "A device used to measure temperature that uses a thermoluminescent diode."

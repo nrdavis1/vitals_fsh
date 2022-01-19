@@ -3,30 +3,14 @@ Parent: VitalSigns
 Id: blood-pressure-panel
 Title: "Blood Pressure Panel"
 Description: "Blood Pressure Panel; a grouping of systolic, diastolic, and mean arterial blood pressure components."
-* ^version = "0.2.0"
-* ^status = #draft
-* ^date = "2019-05-29"
-* ^publisher = "Logica Health"
-* ^jurisdiction = urn:iso:std:iso:3166#US
-* ^kind = #complex-type
-* . ^short = "BloodPressurePanel"
-* . ^definition = "Blood Pressure Panel; a grouping of systolic, diastolic, and mean arterial blood pressure components."
 * extension contains
     ExtBodyPosition named BodyPosition 0..* MS and
     SleepStatus named sleepStatus 0..* MS and
     ExerciseAssociationExt named exerciseAssociation 0..* MS and
     MeasurementSettingExt named MeasurementSetting 0..* MS
-* extension[BodyPosition].value[x] only CodeableConcept
-* extension[BodyPosition].valueCodeableConcept from BodyPositionvalueset (extensible)
 * extension[BodyPosition] ^short = "Body Position"
-* extension[BodyPosition].value[x] only CodeableConcept
-* extension[sleepStatus].valueCodeableConcept from SleepStatusvalueset (extensible)
 * extension[sleepStatus] ^short = "Sleep Status"
-* extension[BodyPosition].value[x] only CodeableConcept
-* extension[exerciseAssociation].valueCodeableConcept from ExertionPhaseVS (extensible)
 * extension[exerciseAssociation] ^short = "Exercise Association"
-* extension[BodyPosition].value[x] only CodeableConcept
-* extension[MeasurementSetting].valueCodeableConcept from MeasurementSettingVS (extensible)
 * extension[MeasurementSetting] ^short = "Measurement setting"
 * status MS
 * code = LNC#85354-9

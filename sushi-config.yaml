@@ -3,7 +3,7 @@
 # │  supported properties, see: https://fshschool.org/docs/sushi/configuration/                    │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: CIMI-Vital-Signs
-canonical: http://example.org
+canonical: http://hl7.org/fhir/us/vitals
 version: 0.2.0
 name: cimi-vital-signs
 title: Vital Signs with Qualifying elements

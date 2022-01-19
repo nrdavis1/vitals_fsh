@@ -2,12 +2,6 @@ ValueSet: BodyTemperatureMeasurementDevicevalueset
 Id: bodyTempMeasurementDeviceVS
 Title: "Body Temperature Measurement Device value set"
 Description: "SELECT SNOMED CT code system values and temprary code system values."
-* ^version = "0.2.0"
-* ^status = #draft
-* ^date = "2019-05-29"
-* ^publisher = "Logica"
-* ^jurisdiction = urn:iso:std:iso:3166#US
-* ^copyright = "TBD"
 * SNOMED_CT#467862000 "Capillary patient thermometer, mercury (physical object)"
 * SNOMED_CT#706158001 "Electronic patient thermometer (physical object)"
 * SNOMED_CT#448735006 "Forehead thermometer (physical object)"

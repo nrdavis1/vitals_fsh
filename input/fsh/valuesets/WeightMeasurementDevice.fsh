@@ -2,12 +2,6 @@ ValueSet: WeightMeasurementDevice
 Id: weightMeasurementDeviceVS
 Title: "Weight Measurement Device value set"
 Description: "SELECT SNOMED CT code system values."
-* ^version = "0.2.0"
-* ^status = #draft
-* ^date = "2019-05-29"
-* ^publisher = "Logica"
-* ^jurisdiction = urn:iso:std:iso:3166#US
-* ^copyright = "TBD"
 * SNOMED_CT#466289007 "Bed scale (physical object)"
 * SNOMED_CT#444063009 "Broselow Luten color coding system for pediatric weight estimation (assessment scale)"
 * SNOMED_CT#720689000 "Chair scale (physical object)"

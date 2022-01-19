@@ -2,12 +2,6 @@ ValueSet: HeartRateMeasurementDevicevalueset
 Id: heartRateMeasDeviceVS
 Title: "Heart Rate Measurement Device value set"
 Description: "SELECT SNOMED CT code system values."
-* ^version = "0.2.0"
-* ^status = #draft
-* ^date = "2019-05-29"
-* ^publisher = "Logica"
-* ^jurisdiction = urn:iso:std:iso:3166#US
-* ^copyright = "TBD"
 * SNOMED_CT#467178001 "Bedside heart rate monitor (physical object)"
 * SNOMED_CT#43770009 "Doppler device (physical object)"
 * SNOMED_CT#86184003 "Electrocardiographic monitor and recorder (physical object)"

@@ -16,14 +16,14 @@ The Implementation Guide contains no examples for this extension
 The Implementation Guide contains no examples for this extension
 
 # These Snomed CT terms are valid
-WARNING: ValueSet.compose[0].include[0].concept[0]: The code 118643004 is not valid in the system http://snomed.info/sct
-WARNING: ValueSet.compose[0].include[0].concept[1]: The code 257308009 is not valid in the system http://snomed.info/sct
-WARNING: ValueSet.compose[0].include[0].concept[2]: The code 53350007 is not valid in the system http://snomed.info/sct
-WARNING: ValueSet.compose[0].include[0].concept[3]: The code 248160001 is not valid in the system http://snomed.info/sct
+The code 118643004 is not valid in the system http://snomed.info/sct
+The code 257308009 is not valid in the system http://snomed.info/sct
+The code 53350007 is not valid in the system http://snomed.info/sct
+The code 248160001 is not valid in the system http://snomed.info/sct
 
-ValueSet.compose[0].include[0].concept[0]	warning	The code 285201006 is not valid in the system http://snomed.info/sct
-ValueSet.compose[0].include[0].concept[1]	warning	The code 264362003 is not valid in the system http://snomed.info/sct
-ValueSet.compose[0].include[0].concept[2]	warning	The code 257585005 is not valid in the system http://snomed.info/sct
+The code 285201006 is not valid in the system http://snomed.info/sct
+The code 264362003 is not valid in the system http://snomed.info/sct
+The code 257585005 is not valid in the system http://snomed.info/sct
 
 # The ISO codes system 3166 is known.
 Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated

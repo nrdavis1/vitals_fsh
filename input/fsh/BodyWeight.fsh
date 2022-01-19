@@ -2,21 +2,13 @@ Profile: BodyWeight
 Parent: CoreBodyWeight
 Id: body-weight
 Description: "Body Weight, the measured mass of an individual's body."
-* ^version = "0.2.0"
-* ^status = #draft
-* ^date = "2019-05-29"
-* ^publisher = "HSPC"
-* ^jurisdiction = urn:iso:std:iso:3166#US
-* ^kind = #complex-type
-* . ^short = "Body Weight"
-* . ^definition = "Body Weight, the measured mass of an individual's body."
 * extension contains
-    ExtDeviceCode named deviceCode 0..* MS and
+    ExtDeviceCode named measurmentDevice 0..* MS and
     AssociatedSituationExt named associatedSituation 0..* MS and
     MeasurementSettingExt named measurementSetting 0..* MS
-* extension[deviceCode].value[x] only CodeableConcept
-* extension[deviceCode].valueCodeableConcept from WeightMeasurementDevice (extensible)
-* extension[deviceCode] ^short = "Measurement Device Type"
+* extension[measurmentDevice].value[x] only CodeableConcept
+* extension[measurmentDevice].valueCodeableConcept from WeightMeasurementDevice (extensible)
+* extension[measurmentDevice] ^short = "Measurement Device Type"
 * extension[associatedSituation].value[x] only CodeableConcept
 * extension[associatedSituation].valueCodeableConcept  from AssociatedSituationvalueset (extensible)
 * extension[associatedSituation] ^short = "Associated Situation"

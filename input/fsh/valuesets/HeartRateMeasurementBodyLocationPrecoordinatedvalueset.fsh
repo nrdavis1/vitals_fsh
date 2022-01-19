@@ -2,13 +2,6 @@ ValueSet: HeartRateMeasurementBodyLocationPrecoordinatedvalueset
 Id: heartRateMeasBodyLocationPrecoordVS
 Title: "Heart Rate Measurement Body Location Precoordinated value set"
 Description: "SELECT SNOMED CT code system values."
-* ^version = "0.2.0"
-* ^status = #draft
-* ^experimental = false
-* ^date = "2019-05-29"
-* ^publisher = "Logica"
-* ^jurisdiction = urn:iso:std:iso:3166#US
-* ^copyright = "TBD"
 * SNOMED_CT#32062004 "Common carotid artery structure (body structure)"
 * SNOMED_CT#113263003 "Left common carotid artery structure (body structure)"
 * SNOMED_CT#65355003 "Right common carotid artery structure (body structure)"

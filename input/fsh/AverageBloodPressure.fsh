@@ -3,30 +3,14 @@ Parent: VitalSigns
 Id: average-blood-pressure
 Title: "Average Blood Pressure"
 Description: "The average of a set of blood pressure measurements. The number of measurements and time period in which they are taken are determined by the institution or protocol."
-* ^version = "0.2.0"
-* ^status = #draft
-* ^date = "2019-05-29"
-* ^publisher = "Logica Health"
-* ^jurisdiction = urn:iso:std:iso:3166#US
-* ^kind = #complex-type
-* . ^short = "Average Blood Pressure"
-* . ^definition = "The average of a set of blood pressure measurements. The number of measurements and time period in which they are taken are determined by the institution or protocol."
 * extension contains
     ExtBodyPosition named BodyPosition 0..* MS and
     ExerciseAssociationExt named exerciseAssociation 0..* MS and
     MeasurementSettingExt named MeasurementSetting 0..* MS and
     MeasurementProtocol named MeasurementProtocol 0..* MS
-* extension[BodyPosition].value[x] only CodeableConcept
-* extension[BodyPosition].valueCodeableConcept from BodyPositionvalueset (extensible)
 * extension[BodyPosition] ^short = "Body Position"
-* extension[exerciseAssociation].value[x] only CodeableConcept
-* extension[exerciseAssociation].valueCodeableConcept from ExertionPhaseVS (extensible)
 * extension[exerciseAssociation] ^short = "Exercise Association"
-* extension[MeasurementSetting].value[x] only CodeableConcept
-* extension[MeasurementSetting].valueCodeableConcept from MeasurementSettingVS (extensible)
 * extension[MeasurementSetting] ^short = "Measurement setting"
-* extension[MeasurementProtocol].value[x] only CodeableConcept
-* extension[MeasurementProtocol].valueCodeableConcept from MeasurementProtocolVS (extensible)
 * extension[MeasurementProtocol] ^short = "Rules and algorithm for Average Blood Pressure calculation."
 * status MS
 * code = SCT#723232008

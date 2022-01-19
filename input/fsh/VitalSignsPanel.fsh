@@ -3,13 +3,6 @@ Parent: VitalsPan
 Id: vital-signs-panel
 Title: "Vital Signs Panel"
 Description: "Vital Signs Panel; a grouping of the vital signs elements."
-* ^version = "0.2.0"
-* ^status = #draft
-* ^date = "2019-05-29"
-* ^publisher = "HSPC"
-* ^jurisdiction = urn:iso:std:iso:3166#US
-* ^kind = #complex-type
-* . ^definition = "Vital Signs Panel; a grouping of the vital signs elements."
 * status MS
 * code = LNC#85353-1
 * code MS

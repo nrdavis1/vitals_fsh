@@ -99,7 +99,7 @@ Instance: BloodPressurePanel-example
 InstanceOf: BloodPressurePanel
 Description: "Blood Pressure Panel example"
 Usage: #example
-* extension[0].url = "ExtBodyPosition"
+* extension[0].url = "http://hl7.org/fhir/us/vitals/StructureDefinition/BodyPositionExt"
 * extension[=].valueCodeableConcept = SCT#33586001 "Sitting Position"
 * extension[+].url = "http://hl7.org/fhir/us/vitals/StructureDefinition/SleepStatusExt"
 * extension[=].valueCodeableConcept = SCT#248218005 "Awake"
@@ -124,7 +124,7 @@ Instance: bodyLength-example
 InstanceOf: BodyLength
 Description: "Body Length example"
 Usage: #example
-* extension.url = "ExtDeviceCode"
+* extension.url = "http://hl7.org/fhir/StructureDefinition/observation-deviceCode"
 * extension.valueCodeableConcept = SCT#51791000 "Measuring tape"
 * status = #final
 * category = ObsCat#vital-signs "Vital Signs"
@@ -154,7 +154,7 @@ Instance: bodyTemperature-example
 InstanceOf: BodyTemperature
 Description: "Body Temperature example"
 Usage: #example
-* extension.url = "ExtDeviceCode"
+* extension.url = "http://hl7.org/fhir/StructureDefinition/observation-deviceCode"
 * extension.valueCodeableConcept = SCT#260548002 "Oral"
 * status = #final
 * category = ObsCat#vital-signs "Vital Signs"
@@ -171,7 +171,7 @@ Instance: bodyWeight-example
 InstanceOf: BodyWeight
 Description: "Body Weight example"
 Usage: #example
-* extension[0].url = "ExtDeviceCode"
+* extension[0].url = "http://hl7.org/fhir/StructureDefinition/observation-deviceCode"
 * extension[=].valueCodeableConcept = SCT#469204003 "Floor scale, electronic"
 * extension[+].url = "http://hl7.org/fhir/us/vitals/StructureDefinition/AssociatedSituationExt"
 * extension[=].valueCodeableConcept = SCT#248160001 "Undressed"
@@ -204,7 +204,7 @@ Instance: heartRate-example
 InstanceOf: HeartRate
 Description: "Heart Rate example"
 Usage: #example
-* extension[0].url = "ExtDeviceCode"
+* extension[0].url = "http://hl7.org/fhir/StructureDefinition/observation-deviceCode"
 * extension[=].valueCodeableConcept = SCT#43770009 "Doppler device"
 * extension[+].url = "http://hl7.org/fhir/us/vitals/StructureDefinition/ExerciseAssociationExt"
 * extension[=].valueCodeableConcept = SCT#309604004 "During exercise"
@@ -227,7 +227,7 @@ Instance: height-example
 InstanceOf: Height
 Description: "Height example"
 Usage: #example
-* extension[0].url = "ExtBodyPosition"
+* extension[0].url = "http://hl7.org/fhir/us/vitals/StructureDefinition/BodyPositionExt"
 * extension[0].valueCodeableConcept = SCT#33586001 "Sitting position"
 * extension[1].url = "http://hl7.org/fhir/StructureDefinition/observation-deviceCode"
 * extension[1].valueCodeableConcept = SCT#51791000 "Measuring tape"
@@ -279,9 +279,9 @@ Instance: respiratoryRate-example
 InstanceOf: ResiratoryRate
 Description: "Respiratory Rate example"
 Usage: #example
-* extension[0].url = "ExtDeviceCode"
+* extension[0].url = "http://hl7.org/fhir/StructureDefinition/observation-deviceCode"
 * extension[=].valueCodeableConcept = SCT#17120007 "Biofeedback, strain gauge"
-* extension[+].url = "ExtBodyPosition"
+* extension[+].url = "http://hl7.org/fhir/us/vitals/StructureDefinition/BodyPositionExt"
 * extension[=].valueCodeableConcept = SCT#40199007 "Supine body position"
 * status = #final
 * category = ObsCat#vital-signs "Vital Signs"

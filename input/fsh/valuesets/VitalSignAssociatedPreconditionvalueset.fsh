@@ -2,11 +2,6 @@ ValueSet: VitalSignAssociatedPreconditionvalueset
 Id: vitalSignAssociatedPrecondVS
 Title: "Vital Sign Associated Precondition value set"
 Description: "SELECT SNOMED CT code system values."
-* ^version = "0.01"
-* ^status = #draft
-* ^date = "2019-05-29"
-* ^publisher = "Logica"
-* ^copyright = "TBD"
 * SNOMED_CT#307429007 "After menopause"
 * SNOMED_CT#225759009 "After menses"
 * SNOMED_CT#263675000 "Antenatal"

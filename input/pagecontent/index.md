@@ -58,22 +58,119 @@ Link to the formal definition views for the vital signs listed in this table.
 
 • In addition, the implementer may choose to provide alternate codes in addition to the standard codes defined here. The examples illustrate using other codes as translations.
 
-| Profile Name                                    | LOINC or SNOMED CT code           | LOINC Name and Comments                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | UCUM Unit Code | Examples                                   |
-|-------------------------------------------------|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|--------------------------------------------|
-| [Vital Signs Panel](StructureDefinition-VitalSignsPanel.html)                     |   [85353-1](http://r.details.loinc.org/LOINC/85353-1.html?sections=Comprehensive)     | Vital signs, weight, height, head circumference, oxygen saturation and BMI panel - It represent a panel of vital signs listed in this table. All members of the   panel are optional and note that querying for the panel may miss individual results that are not part of the actual panel. When used, Observation.valueQuantity is not present; instead, related links (with   type=has-member) reference the vital signs observations (e.g. respiratory rate, heart rate, BP, etc.). This code replaces the deprecated code 8716-3 - Vital signs which is used in the Argonaut Data Query Implementation Guide. | -              | -                                          |
-| [Blood Pressure Panel](StructureDefinition-BloodPressurePanel.html)                  |   [85354-9](http://r.details.loinc.org/LOINC/85354-9.html?sections=Comprehensive)     | Blood pressure panel with all children optional - This is a component observation. It has no value in Observation.valueQuantity and contains at least one component, Systolic blood pressure.                                                                                                                                                                                                                                                                                                                                                                                                                      | -              | [Blood Pressure Panel Example](Observation-BloodPressurePanel-example.html)     |
-| [Average Blood Pressure](StructureDefinition-AverageBloodPressure.html)                |   [723232008](https://browser.ihtsdotools.org/?perspective=full&conceptId1=723232008&edition=MAIN/2020-07-31&release=&languages=en)   | Currently there are no LOINC codes to assign to this profile nor its components.  They have been requested and will replace the SCT code when released.  The Observation.code and Observation.component.code (both components) have been assigned to SNOMED CT Observable Entity codes.                                                                                                                                                                                                                                                                                                                            | -              | [Average Blood Pressure Example](Observation-AverageBloodPressure-example.html)   |
-| [24 hour blood pressure](StructureDefinition-TwentyFourHourBloodPressure.html)                |   [314463006](https://browser.ihtsdotools.org/?perspective=full&conceptId1=314463006&edition=MAIN/2020-07-31&release=&languages=en)   | Currently there isn't a LOINC code for this profile. One has been requested and will replace the SCT code when released.  There are LOINC codes for its components.                                                                                                                                                                                                                                                                                                                                                                                                                                                | -              | [24 hour blood pressure Example](Observation-TwentyFourHourBloodPressure-example.html)   |
-| [Respiratory Rate](StructureDefinition-RespiratoryRate.html)                      |   [9279-1](http://r.details.loinc.org/LOINC/9279-1.html?sections=Comprehensive)      | Respiratory rate                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | /min           | [Respiratory Rate example](Observation-respiratoryRate-example.html)         |
-| [Heart Rate](StructureDefinition-HeartRate.html)                            |   [8867-4](http://r.details.loinc.org/LOINC/8867-4.html?sections=Comprehensive)      | Heart rate                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | /min           | [Heart Rate example](Observation-heartRate-example.html)               |
-| [Oxygen Saturation by Pulse Oximetry](StructureDefinition-OxygenSaturationArterialBloodPulseOx.html)   |   [59408-5](http://r.details.loinc.org/LOINC/59408-5.html?sections=Comprehensive)     | Oxygen saturation in Arterial blood by Pulse oximetry                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | %              | [Oxygen Saturation example](Observation-oxygenSaturationPulseOx-example.html)        |
-| [Oxygen Saturation](StructureDefinition-OxygenSaturationArterialBlood.html)                     |   [2708-6](http://r.details.loinc.org/LOINC/2708-6.html?sections=Comprehensive)      | Oxygen saturation in Arterial blood                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | %              | [Oxygen Saturation example](Observation-oxygenSaturation-example.html)        |
-| [Body Temperature](StructureDefinition-BodyTemperature.html)                      |   [8310-5](http://r.details.loinc.org/LOINC/8310-5.html?sections=Comprehensive)      | Body temperature                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Cel, [degF]    | [Body Temperature example](Observation-bodyTemperature-example.html)         |
-| [Body Height](StructureDefinition-Height.html)                           |   [8302-2](http://r.details.loinc.org/LOINC/8302-2.html?sections=Comprehensive)      | Body height                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | cm, [in_i]     | [Body Height example](Observation-height-example.html)              |
-| [Body Length](StructureDefinition-BodyLength.html)                           |   [8306-3](http://r.details.loinc.org/LOINC/8306-3.html?sections=Comprehensive)      | Body height -- lying                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | cm, [in_i]     | [Body Length example](Observation-bodyLength-example.html)              |
-| [Head Circumference](StructureDefinition-HeadOccipitalFrontalCircumference.html)                    |   [8287-5](http://r.details.loinc.org/LOINC/8287-5.html?sections=Comprehensive)      | Head Occipital-frontal circumference by Tape measure                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | cm, [in_i]     | [Head Circumference example](Observation-headCircumference-example.html)       |
-| [Body Weight](StructureDefinition-BodyWeight.html)                           |   [29463-7](http://r.details.loinc.org/LOINC/29463-7.html?sections=Comprehensive)     | Body weight                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | g, kg,[lb_av]  | [Body Weight example](Observation-bodyWeight-example.html)              |
-| [Body Mass Index](StructureDefinition-BodyMassIndex.html)                       |   [39156-5](http://r.details.loinc.org/LOINC/39156-5.html?sections=Comprehensive)     | Body mass index (BMI) [Ratio]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | kg/m2          | [Body Mass Index example](Observation-bmi-example.html)          |
+<div>
+  <table class="grid">
+    <thead>
+      <tr>
+		<th width="13%">Profile Name</th>
+        <th width="7%">LOINC or SNOMED CT code</th>
+        <th width="60%">LOINC Name and Comments</th>
+        <th width="10%">UCUM Unit Code</th>
+		<th width="10%">Examples</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+		<td><a href="StructureDefinition-vital-signs-panel.html" target="_blank">Vital Signs Panel&nbsp;&nbsp;</a></td>
+        <td><a href="http://r.details.loinc.org/LOINC/85353-1.html?sections=Comprehensive" target="_blank">&nbsp;&nbsp;85353-1&nbsp;&nbsp;</a></td>
+        <td>Vital signs, weight, height, head circumference, oxygen saturation and BMI panel - It represent a panel of vital signs listed in this table. All members of the   panel are optional and note that querying for the panel may miss individual results that are not part of the actual panel. When used, Observation.valueQuantity is not present; instead, related links (with   type=has-member) reference the vital signs observations (e.g. respiratory rate, heart rate, BP, etc.). This code replaces the deprecated code 8716-3 - Vital signs which is used in the Argonaut Data Query Implementation Guide.</td>
+        <td>-</td>
+		<td>-</td>
+      </tr>
+      <tr>
+		<td><a href="StructureDefinition-blood-pressure-panel.html" target="_blank">Blood Pressure Panel&nbsp;&nbsp;</a></td>
+        <td><a href="http://r.details.loinc.org/LOINC/85354-9.html?sections=Comprehensive" target="_blank">&nbsp;&nbsp;85354-9&nbsp;&nbsp;</a></td>
+        <td>Blood pressure panel with all children optional - This is a component observation. It has no value in Observation.valueQuantity and contains at least one component, Systolic blood pressure.</td>
+        <td>-</td>
+		<td><a href="Observation-BloodPressurePanel-example.html" target="_blank">Blood Pressure Panel Example&nbsp;&nbsp;</a></td>
+      </tr>
+      <tr>
+		<td><a href="StructureDefinition-average-blood-pressure.html" target="_blank">Average Blood Pressure&nbsp;&nbsp;</a></td>
+        <td><a href="https://browser.ihtsdotools.org/?perspective=full&conceptId1=723232008&edition=MAIN/2020-07-31&release=&languages=en" target="_blank">&nbsp;&nbsp;723232008&nbsp;&nbsp;</a></td>
+        <td>Currently there are no LOINC codes to assign to this profile nor its components.  They have been requested and will replace the SCT code when released.  The Observation.code and Observation.component.code (both components) have been assigned to SNOMED CT Observable Entity codes.</td>
+        <td>-</td>
+		<td><a href="Observation-AverageBloodPressure-example.html" target="_blank">Average Blood Pressure Example&nbsp;&nbsp;</a></td>
+      </tr>
+      <tr>
+        <td><a href="StructureDefinition-twenty-four-hour-blood-pressure.html" target="_blank">24 hour blood pressure&nbsp;&nbsp;</a></td>
+        <td><a href="https://browser.ihtsdotools.org/?perspective=full&conceptId1=314463006&edition=MAIN/2020-07-31&release=&languages=en" target="_blank">&nbsp;&nbsp;314463006&nbsp;&nbsp;</a></td>
+        <td>Currently there isn't a LOINC code for this profile. One has been requested and will replace the SCT code when released.  There are LOINC codes for its components.</td>
+        <td>-</td>
+        <td><a href="Observation-TwentyFourHourBloodPressure-example.html" target="_blank">24 hour blood pressure Example&nbsp;&nbsp;</a></td>
+      </tr>
+      <tr>
+		<td><a href="StructureDefinition-respiratory-rate.html" target="_blank">Respiratory Rate&nbsp;&nbsp;</a></td>
+        <td><a href="http://r.details.loinc.org/LOINC/9279-1.html?sections=Comprehensive" target="_blank">&nbsp;&nbsp;9279-1&nbsp;&nbsp;</a></td>
+        <td>Respiratory rate</td>
+        <td>/min</td>
+		<td><a href="Observation-respiratoryRate-example.html" target="_blank">Respiratory Rate example&nbsp;&nbsp;</a></td>
+      </tr>
+      <tr>
+		<td><a href="StructureDefinition-heart-rate.html" target="_blank">Heart Rate&nbsp;&nbsp;</a></td>
+        <td><a href="http://r.details.loinc.org/LOINC/8867-4.html?sections=Comprehensive" target="_blank">&nbsp;&nbsp;8867-4&nbsp;&nbsp;</a></td>
+        <td>Heart rate</td>
+        <td>/min </td>
+		<td><a href="Observation-heartRate-example.html" target="_blank">Heart Rate example&nbsp;&nbsp;</a></td>
+      </tr>
+      <tr>
+		<td><a href="StructureDefinition-oxygen-saturation-arterial-blood-pulseOx.html" target="_blank">Oxygen Saturation by Pulse Oximetry&nbsp;&nbsp;</a></td>
+        <td><a href="http://r.details.loinc.org/LOINC/59408-5.html?sections=Comprehensive" target="_blank">&nbsp;&nbsp;59408-5&nbsp;&nbsp;</a></td>
+        <td>Oxygen saturation in Arterial blood by Pulse oximetry</td>
+        <td>%</td>
+		<td><a href="Observation-oxygenSaturationPulseOx-example.html" target="_blank">Oxygen Saturation example&nbsp;&nbsp;</a></td>
+      </tr>
+      <tr>
+		<td><a href="StructureDefinition-oxygen-saturation-arterial-blood.html" target="_blank">Oxygen Saturation&nbsp;&nbsp;</a></td>
+        <td><a href="http://r.details.loinc.org/LOINC/2708-6.html?sections=Comprehensive" target="_blank">&nbsp;&nbsp;2708-6&nbsp;&nbsp;</a></td>
+        <td>Oxygen saturation in Arterial blood</td>
+        <td>%</td>
+		<td><a href="Observation-oxygenSaturation-example.html" target="_blank">Oxygen Saturation example&nbsp;&nbsp;</a></td>
+      </tr>
+      <tr>
+		<td><a href="StructureDefinition-body-temperature.html" target="_blank">Body Temperature&nbsp;&nbsp;</a></td>
+        <td><a href="http://r.details.loinc.org/LOINC/8310-5.html?sections=Comprehensive" target="_blank">&nbsp;&nbsp;8310-5&nbsp;&nbsp;</a></td>
+        <td>Body temperature</td>
+        <td>Cel, [degF]</td>
+		<td><a href="Observation-bodyTemperature-example.html" target="_blank">Body Temperature example&nbsp;&nbsp;</a></td>
+      </tr>
+      <tr>
+		<td><a href="StructureDefinition-height.html" target="_blank">Body Height&nbsp;&nbsp;</a></td>
+        <td><a href="http://r.details.loinc.org/LOINC/8302-2.html?sections=Comprehensive" target="_blank">&nbsp;&nbsp;8302-2&nbsp;&nbsp;</a></td>
+        <td>Body height</td>
+        <td>cm, [in_i]</td>
+		<td><a href="Observation-height-example.html" target="_blank">Body Height example&nbsp;&nbsp;</a></td>
+      </tr>
+      <tr>
+		<td><a href="StructureDefinition-body-length.html" target="_blank">Body Length&nbsp;&nbsp;</a></td>
+        <td><a href="http://r.details.loinc.org/LOINC/8306-3.html?sections=Comprehensive" target="_blank">&nbsp;&nbsp;8306-3&nbsp;&nbsp;</a></td>
+        <td>Body height -- lying</td>
+        <td>cm, [in_i]</td>
+		<td><a href="Observation-bodyLength-example.html" target="_blank">Body Length example&nbsp;&nbsp;</a></td>
+      </tr>
+      <tr>
+		<td><a href="StructureDefinition-head-occipital-frontal-circumference.html" target="_blank">Head Circumference&nbsp;&nbsp;</a></td>
+        <td><a href="http://r.details.loinc.org/LOINC/8287-5.html?sections=Comprehensive" target="_blank">&nbsp;&nbsp;8287-5&nbsp;&nbsp;</a></td>
+        <td>Head Occipital-frontal circumference by Tape measure</td>
+        <td>cm, [in_i]</td>
+		<td><a href="Observation-headCircumference-example.html" target="_blank">Head Circumference example&nbsp;&nbsp;</a></td>
+      </tr>
+      <tr>
+		<td><a href="StructureDefinition-body-weight.html" target="_blank">Body Weight&nbsp;&nbsp;</a></td>
+        <td><a href="http://r.details.loinc.org/LOINC/29463-7.html?sections=Comprehensive" target="_blank">&nbsp;&nbsp;29463-7&nbsp;&nbsp;</a></td>
+        <td>Body weight</td>
+        <td>g, kg,[lb_av]</td>
+		<td><a href="Observation-bodyWeight-example.html" target="_blank">Body Weight example&nbsp;&nbsp;</a></td>
+      </tr>
+      <tr>
+		<td><a href="StructureDefinition-body-mass-index.html" target="_blank">Body Mass Index&nbsp;&nbsp;</a></td>
+        <td><a href="http://r.details.loinc.org/LOINC/39156-5.html?sections=Comprehensive" target="_blank">&nbsp;&nbsp;39156-5&nbsp;&nbsp;</a></td>
+        <td>Body mass index (BMI) [Ratio]</td>
+        <td>kg/m2</td>
+		<td><a href="Observation-bmi-example.html" target="_blank">Body Mass Index example&nbsp;&nbsp;</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 ### Acknowledgements
 
